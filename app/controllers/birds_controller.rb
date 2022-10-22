@@ -39,7 +39,7 @@ class BirdsController < ApplicationController
       bird.update(likes: bird.likes + 1)
       render json: bird
     else
-      render json: { error: "BIrd not found" }, status: :not_found
+      render json: { error: "Bird not found" }, status: :not_found
   end
 
   private
